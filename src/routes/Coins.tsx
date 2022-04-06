@@ -74,7 +74,7 @@ function Coins() {
   return (
     <Container>
       <Header>
-        <Title></Title>
+        <Title>COINS</Title>
       </Header>
       {loading ? (
         <Loader>Loading...</Loader>
