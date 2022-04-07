@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -77,9 +76,9 @@ function Coins() {
   // }, []);
   return (
     <Container>
-      <HelmetProvider>
+      <Helmet>
         <title>COINS</title>
-      </HelmetProvider>
+      </Helmet>
       <Header>
         <Title>COINS</Title>
       </Header>

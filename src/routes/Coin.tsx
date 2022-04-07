@@ -1,5 +1,5 @@
 import { useQuery } from "react-query";
-import { HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { Route, Switch, useLocation, useParams, useRouteMatch } from "react-router";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -165,9 +165,9 @@ function Coin() {
 
   return (
     <Container>
-      <HelmetProvider>
+      <Helmet>
         <title>{state?.name ? state.name : loading ? "Loading..." : infoData?.name}</title>
-      </HelmetProvider>
+      </Helmet>
       <Header>
         <Title> {state?.name ? state.name : loading ? "Loading..." : infoData?.name}</Title>
       </Header>
